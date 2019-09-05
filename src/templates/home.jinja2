@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+	</head>
+	<body>
+    {% for section in sections %}
+        {{ section.name }}
+        <ul>
+        {% for topic in section.topics %}
+                <li>
+                    <a href="{{ url_for('workspace', name=topic.fqdn) }}">{{ topic.name }}</a>
+                </li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+	</body>
+</html>
