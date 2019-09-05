@@ -1,4 +1,4 @@
-# Project Title
+# Coding Math
 
 The YouTube chennal [Coding Math](https://www.youtube.com/user/codingmath/playlists) demonstrates math through coding with JavaScript. This flask web application provides a simple framework to allow students to follow along with the coding exercises.
 
