@@ -1,87 +1,37 @@
 # Project Title
 
-One Paragraph of project description goes here
+The YouTube chennal [Coding Math](https://www.youtube.com/user/codingmath/playlists) demonstrates math through coding with JavaScript. This flask web application provides a simple framework to allow students to follow along with the coding exercises.
+
+The diretories under `src\static\js` correspond to sections in the channel, section for trigonemtry, physics etc. A section directory contains java script files that corrspond to the episodes as you follow along with the exercies, i.e. `trigonometry\trig01.js`
+
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+1.  Clone the repostory to a directory:
+   
+    `git clone https://github.com/twje/coding_math.git .`
+
+2.  Create a python virtual environment:
+
+    `python -m venv venv`
+    
+3.  Activate python virtual environment:
+
+    `venv\Scripts\activate.bat`
+
+4.  Install dependancies:
+
+    `pip install -r requirements.txt`
+    
+5.  Start web application:
+    
+    `cd src`
+    
+    `python run.py`
+
+6.  Test URL in browser: `http://127.0.0.1:4990/`. You will see a list of sections and links - click `trig01.js` to run the javascript to display a trig curve.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+Python 3.X
+git client
