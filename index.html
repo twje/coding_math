@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Coding Math</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            Collapsible Group Item #1
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+                        $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+                        $$ \begin{array}{rcll}
+                        y & = & x^{2}+bx+c\\
+                        & = & x^{2}+2\times\dfrac{b}{2}x+c\\
+                        & = & \underbrace{x^{2}+2\times\dfrac{b}{2}x+\left(\frac{b}{2}\right)^{2}}-
+                        {\left(\dfrac{b}{2}\right)^{2}+c}\\
+                        & & \qquad\left(x+{\dfrac{b}{2}}\right)^{2}\\
+                        & = & \left(x+\dfrac{b}{2}\right)^{2}-\left(\dfrac{b}{2}\right)^{2}+c
+                        & \left|+\left({\dfrac{b}{2}}\right)^{2}-c\right.\\
+                        y+\left(\dfrac{b}{2}\right)^{2}-c & = & \left(x+
+                        \dfrac{b}{2}\right)^{2} & \left|\strut(\textrm{vertex form})\right.\\
+                        y-y_{S} & = & (x-x_{S})^{2}\\
+                        S(x_{S};y_{S}) & \,\textrm{or}\,
+                        & S\left(-\dfrac{b}{2};\,\left(\dfrac{b}{2}\right)^{2}-c\right)
+                        \end{array} $$
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
